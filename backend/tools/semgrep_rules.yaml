@@ -1,0 +1,8 @@
+rules:
+  - id: python-eval-detected
+    languages:
+      - python
+    message: Use of eval() detected. This can lead to code injection.
+    severity: ERROR
+    pattern: eval(...)
+
